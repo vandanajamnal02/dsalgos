@@ -15,32 +15,23 @@ public class consecutiveCount {
             array[i] = input.nextInt();
         }
         System.out.println("These are the numbers you have entered.");
-
         consecutiveCount cs = new consecutiveCount();
         int consCountResult = cs.countingCons(array);
         System.out.println("These cons count : "+consCountResult);
     }
      public Integer countingCons(int[] a) {
-         int consucativeCount = 0;
+         int consecutiveCount = 0;
          ArrayList<Integer> a1 = new ArrayList<Integer>();
 
          for(int i = 0; i < a.length; i++){
              if(a[i] == 1) {
-                 consucativeCount++;
-                 a1.add(consucativeCount);
+                 consecutiveCount++;
+                 a1.add(consecutiveCount);
 
              }else{
-                 consucativeCount = 0;
+                 consecutiveCount = 0;
              }
          }
          return(Collections.max(a1));
      }
-    public static void printArray(int arr[]){
-
-        int n = arr.length;
-
-        for (int i = 0; i < n; i++) {
-            System.out.println(arr[i] + " ");
-        }
-    }
 }
