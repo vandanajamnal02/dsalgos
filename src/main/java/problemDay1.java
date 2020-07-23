@@ -14,9 +14,8 @@ public class problemDay1 {
         int k = 34;
 
         problemDay1 prob1 = new problemDay1();
-        int addedDigit = prob1.add(a,34);
+        int addedDigit = prob1.add(a,k);
         System.out.println(addedDigit);
-
     }
 
 
