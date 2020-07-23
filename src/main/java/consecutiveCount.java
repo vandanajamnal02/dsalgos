@@ -32,6 +32,23 @@ public class consecutiveCount {
                  consecutiveCount = 0;
              }
          }
-         return(Collections.max(a1));
+         return(maxEle(a1));
      }
-}
+
+     public int maxEle(ArrayList a1){
+
+         int max = 0;
+
+         for(int i = 0; i < a1.size(); i++) {
+             int currentVal = (int) a1.get(i);
+             if(currentVal>max)
+             {
+                 max = currentVal;
+             }
+         }
+         return (max);
+
+     }
+
+    }
+
