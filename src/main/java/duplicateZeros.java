@@ -19,8 +19,8 @@ public class duplicateZeros {
 
     public void duplicateZeros(int[] arr) {
        int zeroCount = checkZeroCount(arr);
-        if ((zeroCount == arr.length) && ((2*zeroCount) >= arr.length)) {
-            System.out.println("all ele are zero"+ 2*zeroCount);
+        if (zeroCount == arr.length) {
+            System.out.println("all ele are zero"+zeroCount);
         } else {
             int zeroIndex = 0;
             for (int i = 0; i < arr.length; i++) {
