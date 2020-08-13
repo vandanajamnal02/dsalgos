@@ -7,34 +7,7 @@ public class mergingSortedArray<i> {
         mr.emptySpace(nums1,6,nums2,3);
     }
 
-    public void merge(int[] nums1, int m, int[] nums2, int n) {
-        int j=0;
-        int newSize=m+n;
-        for(int i = m-n; i<m; i++){
-            nums1[i] = nums2[j];
-            j++;
-        }
-        int min, temp;
-        for(int i = 0; i< nums1.length-1; i++){
-            min = i;
-            for(int k = i+1; k < nums1.length; k++){
-                if(nums1[k] < nums1[min]) {
-                    min = k;
-                }
-            }
-            temp = nums1[min];
-            nums1[min] = nums1[i];
-            nums1[i] = temp;
-        }
-
-        for(int o = 0; o<nums1.length;o++){
-            System.out.println(nums1[o]);
-        }
-    }
-
-
     public void emptySpace(int[] nums1, int m, int[] nums2, int n) {
-
 
             int receivedIndex=0;
 
@@ -66,9 +39,6 @@ public class mergingSortedArray<i> {
 
                     }
                 }
-
-
-
 
     }
 
