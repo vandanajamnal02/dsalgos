@@ -5,8 +5,6 @@ public class moveZerosInArray {
         int arr[] = {0,1,0,3,12};
         int n = arr.length;
         moveZeros(arr);
-//        int[] result = new int[n];
-
         for (int i = 0; i < arr.length; i++){
             System.out.print(arr[i] + " ");
         }

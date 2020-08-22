@@ -43,8 +43,8 @@ import java.util.Arrays;
 
 
         public static void main(String ar[]) {
-            int a[] = {2, 4, 6, 9, 0, 0, 0};
-            int b[] = {1, 3, 7};
+            int a[] = {1, 2, 3, 0, 0, 0};
+            int b[] = {2,5,6};
 
             merge2SortedArray ob = new merge2SortedArray();
             ob.merge(a, b);
