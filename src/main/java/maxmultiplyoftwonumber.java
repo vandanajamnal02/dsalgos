@@ -5,7 +5,7 @@ public class maxmultiplyoftwonumber {
     public static void main(String args[]){
         int [] asdf = {};
         maxmultiplyoftwonumber newText = new maxmultiplyoftwonumber();
-        int[]resutl = newText.returnNumberMaxMultiply(asdf);
+        int[] resutl = newText.returnNumberMaxMultiply(asdf);
 
         for(int i = 0; i<resutl.length;i++){
             if(resutl[0] == 0){
